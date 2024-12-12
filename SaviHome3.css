@@ -96,10 +96,10 @@ main {
 #entrada1 {
     width: 98.7%;
     background-image: url(img/Página\ webblog-11.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 2500px 5px 0 20px;
+    padding: 2800px 5px 0 20px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -107,5 +107,106 @@ main {
 }
   
   #entrada1 img {
-    width: 50%;
+    width: 80%;
+}
+
+footer {  
+  background-color: #92AD84;
+  width: 100;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  margin: 0;
+  color: white;
+}
+
+.footer-image {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+}
+
+.footer-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #eae1d3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-address {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links h3 {
+  color: white;
+  margin-bottom: 1rem;
+  margin-right: 350px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
 }

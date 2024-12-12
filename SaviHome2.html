@@ -1,35 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaviHome</title>
-    <link rel="stylesheet" href="SaviHome2.css">
-    <link rel="icon" href="img/icon-13.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaviHome</title>
+  <link rel="stylesheet" href="SaviHome2.css">
+  <link rel="icon" href="img/icon-13.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    <Header>
+  <header>
         <img src="img/LOGO-VARIACIONES_SH-11.png" alt="">
-    </Header>
-    <nav>
-        <ul>
-            <a href="SaviHome.html">Inicio</a>
-            <a href="SaviHome1.html">Sobre Nosotros</a>
-            <a href="SaviHome2.html">Nuestros Productos</a>
-            <a href="SaviHome3.html">Blog</a>
-            <a href="SaviHome4.html">Registrate</a>
-        </ul>
-    </nav>
-    <main>
-        <div class="d1">
-            <input type="submit" id="boton" value="TOALLAS">
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-box">
+      <button class="search-button"><i class="fas fa-search"></i></button>
+      <button class="login-cart-button" onclick="location.href='SaviHome4.html';">
+        <i class="fas fa-user"></i> Ingresar/Registrarse
+      </button>
+      <button class="cart-button">
+        <i class="fas fa-shopping-cart"></i> $ 0.00
+      </button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="SaviHome1.html">Sobre Nosotros</a></li>
+      <li><a href="SaviHome2.html">Nuestros Productos</a></li>
+      <li><a href="SaviHome3.html">Blog</a></li>
+    </ul>
+  </nav> 
+  <main>
+    
+    <div id="entrada2"></div>
+    <div id="text2">
+      <h1>Nuestros Productos</h1>
+    </div>
+    <div class="logo1"></div>
+    <div class="logo2"></div>
+    <div class="logo3"></div>
+    <div class="logo4"></div>
+    <div id="colecciones">
+      <p>Camino de Mesa Belén<br><br>
+        S/42.50</p>
+      <p>Tabla de Mármol<br><br>
+        S/39.90</p>
+      <p>Mandala Niza<br><br>
+        S/30</p>
+      <p>Cubrecama Garden<br><br>
+        S/112.8</p>
+    </div>
+
+    <div class="logo5"></div>
+    <div class="logo6"></div>
+    <div class="logo7"></div>
+    <div class="logo8"></div>
+    <div id="colecciones2">
+      <p>Línea Toallas Essencial<br><br>
+        A partir de S/5.50</p>
+      <p>Canasta Cedro<br><br>
+        S/49.90</p>
+      <p>Set de cubiertos<br><br>
+        S/20.90</p>
+      <p>Individual Saona<br><br>
+        S/9.50</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <img src="img/MiniLogo.png" alt="SaviHome Logo" class="footer-logo" />
+        <p class="footer-tagline">Decora con los mejores elementos</p>
+        <div class="social-icons">
+          <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="" class="social-icon"><i class="fab fa-tiktok"></i></a>
         </div>
-        <div class="d2">
-            <input type="submit" id="boton" value="MANTELERÍA">
-        </div>
-        <div class="d3">
-            <input type="submit" id="boton" value="ORGANIZADORES">
-        </div>
-    </main>
+        <div class="footer-address"></div>
+      </div>
+      <div class="footer-links">
+        <h3>Enlaces rápidos</h3>
+        <a href="./Index.html">Inicio</a>
+        <a href="./SaviHome1.html">Sobre Nosotros</a>
+        <a href="./SaviHome2.html">Productos</a>
+        <a href="./SaviHome3.html">Blog</a>
+        <a href="./SaviHome4.html">Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <p>+51 999 999 999</p>
+        <p>ventas@brimisa.com</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

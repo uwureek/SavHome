@@ -1,88 +1,451 @@
-body{
+body {
     background-color: #fffefc;
-}
-header{
-    width: 100;
-    margin: auto;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    width: 100%;
     display: flex;
-    position: absolute;
-    left: 50px;
-    top: 25px;
+    position: relative;
+    padding: 25px 50px;
+    box-sizing: border-box;
 }
 header img{
     height: 80px;
 }
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+  }
+
+  .search-box {
+    width: 500px;
+    height: 38px;
+    /* Ajusta la altura del cuadro de búsqueda */
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .search-button {
+    height: 40px;
+    width: 40px;
+    padding: 0 10px;
+    background-color: #92AD84;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-right: 400px;
+  }
+
+  .search-button i {
+    font-size: 16px;
+  }
+
+  .login-cart-button,
+.cart-button {
+  margin-left: 20px;
+  /* Espacio entre los botones */
+  height: 45px;
+  background-color: #92AD84;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 nav{
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    background-color: #eae1d367;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #92AD84;
+  padding: 0px 100px; 
+  box-sizing: border-box;
 }
 nav ul{
-    display: flex;
-    justify-content: flex-end;  
-    align-items:flex-start ;
+  display: flex;
+  justify-content: flex-start;  
+  align-items:flex-start ;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 nav a{
-    color:#92AD84;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 40px;
-    display: block;
-    text-decoration: none;
-    right: 60px;
+  color:white;
+  padding: 18px 15px;
+  display: block;
+  text-decoration: none;
 }
 nav a:hover{
-    height: 20px;
-    padding: 40px;
-    color: #7f9674;
-    background-color: #eae1d3;
+  background-color: rgba(255,255,255,.2);
 }
-main{
-    width: 100;
-    height: 800px;
-    padding: 0 50px 0 50px;
-    background-color: #ffffff;
+
+main {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 330px 230px 250px 130px 150px;
+}
+
+#entrada2 {
+  width: 98%;
+  padding: 195px 5px 0 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#entrada2 img {
+  width: 100%;
+}
+
+#text2 {
+  width: 85%;
+  height: 85px;
+  padding: 80px;
+  color: rgb(0, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#text2 h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  color: #92AD84;
+}
+
+.logo1 {
+  width: 150px;
+  height: 160px;
+  margin: auto;
+  margin-left: 150px;
+  margin-right: 98px;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/Página\ webproddd-12.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.logo2 {
+  width: 150px;
+  height: 160px;
+  margin: auto;
+  margin-left: 35px;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/Página\ webproddd-13.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 10px;
+  border-radius: 10px;
+}
+
+.logo3 {
+  width: 150px;
+  height: 160px;
+  margin: auto;
+  margin-left: 25px;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/Página\ webproddd-14.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 10px;
+  border-radius: 10px;
+}
+
+.logo4 {
+  width: 150px;
+  height: 160px;
+  margin: auto;
+  margin-left: 25px;
+  margin-right: 150px;
+  padding: 195px 5px 150px 150px;
+  background-image: url(img/Página\ webproddd-15.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 10px;
+  border-radius: 10px;
+}
+
+/* Ajuste para el contenedor de textos */
+#colecciones {
+  width: 93%;
+  padding: 0 50px;
+  /* Simplificado el padding */
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: space-around;
+  /* Cambiado a space-around para mejor distribución */
+  align-items: center;
+  gap: 20px;
+}
+
+#colecciones p {
+  padding: 0;
+  /* Eliminado el padding */
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  /* Centrado el texto */
+  line-height: 20px;
+  color: #2a2b2a;
+  /* Mismo ancho que los logos */
+}
+
+.logo5 {
+    width: 150px;
+    height: 160px;
     margin: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-main div{
-    width: 480px;
-    height: 700px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 44px;
-}
-.d1{
+    margin-left: 150px;
+    margin-right: 98px;
+    padding: 195px 5px 150px 150px;
     background-image: url(img/toall.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-}
-#boton{
-    width: 250px;
-    height: 50px;
-    padding: 0 30px;
-    margin:  0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .logo6 {
+    width: 150px;
+    height: 160px;
+    margin: auto;
+    margin-left: 35px;
+    padding: 195px 5px 150px 150px;
+    background-image: url(img/decoracion);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 10px;
+    border-radius: 10px;
+  }
+  
+  .logo7 {
+    width: 150px;
+    height: 160px;
+    margin: auto;
+    margin-left: 25px;
+    padding: 195px 5px 150px 150px;
+    background-image: url(img/cocina);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 10px;
+    border-radius: 10px;
+  }
+  
+  .logo8 {
+    width: 150px;
+    height: 160px;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 150px;
+    padding: 195px 5px 150px 150px;
+    background-image: url(img/manteleria);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Ajuste para el contenedor de textos */
+  #colecciones2 {
+    width: 93%;
+    padding: 0 50px;
+    /* Simplificado el padding */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 6;
+    display: flex;
+    justify-content: space-around;
+    /* Cambiado a space-around para mejor distribución */
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #colecciones2 p {
+    padding: 0;
+    /* Eliminado el padding */
     font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: #86a07a;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    /* Centrado el texto */
+    line-height: 20px;
+    color: #2a2b2a;
+    /* Mismo ancho que los logos */
+  }
+
+footer {  
+  background-color: #92AD84;
+  width: 100;
+  color: white;
+  padding: 3rem 0;
 }
-.d2{
-    background-image: url(img/caminodemesaCABOS_580x_crop_center.webp);
-    background-size: cover;
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
-.d3{
-    background-image: url(img/surtido-envases-alimentos-estante.jpg);
-    background-size: cover;
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  margin: 0;
+  color: white;
+}
+
+.footer-image {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+}
+
+.footer-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #eae1d3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-address {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links h3 {
+  color: white;
+  margin-bottom: 1rem;
+  margin-right: 350px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
 }
